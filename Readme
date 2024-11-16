@@ -1,0 +1,41 @@
+# ChainBattles: A Dynamic On-Chain NFT Game
+
+ChainBattles is a smart contract that creates **dynamic NFTs** representing "Warrior" characters for a blockchain-based game. The contract allows players to mint their warriors, train them to increase their levels, and dynamically updates the metadata, all stored completely on-chain.
+
+---
+
+## Features
+
+- **ERC-721 NFTs**: Fully compliant with the ERC-721 standard using OpenZeppelin's libraries.
+- **Dynamic Metadata**: Token images and metadata are generated and updated entirely on-chain.
+- **On-Chain Attributes**: Warriors start at level 0 and can be trained to increase their levels.
+- **SVG Images**: NFTs include dynamically rendered SVG images showing the warrior's current level.
+
+---
+
+## How It Works
+
+1. **Minting Warriors**  
+   Use the `mint` function to create a new warrior NFT. Each NFT starts at level 0.
+
+2. **Training Warriors**  
+   Use the `train` function to increase the level of your warrior. Only the owner of the NFT can train it.
+
+3. **Dynamic Updates**  
+   The SVG image and metadata update in real-time as the warrior levels up.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- **Solidity v0.8.x**: Ensure your environment supports the required Solidity version.
+- **OpenZeppelin Contracts**: The project uses OpenZeppelin's secure libraries.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   
+   cd ChainBattles
